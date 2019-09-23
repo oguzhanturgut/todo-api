@@ -2,8 +2,6 @@
 
 ## Installation
 
----------------
-
 Clone repository
 
 `git clone https://github.com/oguzhanturgut/todo-api.git`
@@ -20,8 +18,6 @@ Start server: Server will be listening on port 3000
 
 ## Usage
 
----------------
-
 ### *`/user` endpoint*
 
 | **Request**               | **Description**                 | **Body**                                                                            | **Details**                  |
@@ -32,6 +28,8 @@ Start server: Server will be listening on port 3000
 | `DELETE /user/:userid`    | Delete user by user id          |                                                                                     |                              |
 | `GET /user/:userid/list`  | Get lists of a user by user id  |                                                                                     |                              |
 | `POST /user/:userid/list` | Create new list for a user      | `{`<br/>`"listname": "Shopping List",`<br/>`"alert": "2019-10-01 12:00:00"`<br/>`}` | Set reminder alert(optional) |
+
+---------------
 
 ### *`/list` endpoint*
 
@@ -45,6 +43,8 @@ Start server: Server will be listening on port 3000
 | `DELETE /list/:listid/todo/:todoid`      | Delete a Todo by todo id             |                                                                  |                                         |
 | `POST /list/:listid/todo/:todoid/done`   | Mark Todo as done by todo id         |                                                                  |                                         |
 | `DELETE /list/:listid/todo/:todoid/done` | Mark Todo as **not** done by todo id |                                                                  |                                         |
+
+---------------
 
 ### *`/tag` endpoint*
 
